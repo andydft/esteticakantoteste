@@ -7,15 +7,20 @@
     --bronze: #C5A880;           /* Pure Champagne Gold */
     --bronze-light: #F4EFEA;     /* Soft Ivory / Cream */
     --bronze-dark: #A88B62;
-    --black: #111111;            /* Rich Obsidian Matte Black */
-    --black-accent: #1A1A1A;     /* Soft black for elements */
+    --black: #1C1712;            /* Warm Espresso Black (was flat #111111) */
+    --black-accent: #241E17;     /* Soft espresso for elements */
     --gray-light: #FAF9F5;       /* Luminous Warm Linen White */
-    --text-dark: #1F1F1F;
-    --text-muted: #5A5A5A;       /* High-contrast muted text */
+    --text-dark: #201B16;
+    --text-muted: #5A5652;       /* Warm-toned muted text, high contrast */
     --text-light: #F4EFEA;
     --text-light-muted: #A89F91; /* Warm grey/sand text for dark backgrounds */
     --border-color: rgba(197, 168, 128, 0.3);
     --border-light: rgba(0, 0, 0, 0.08);
+
+    /* Secondary accent — used sparingly (testimonials section) */
+    --sage: #8B9575;
+    --sage-dark: #67714F;
+    --sage-light: #EEF0E8;
     
     /* Typography */
     --font-heading: 'Cormorant Garamond', serif;
@@ -695,6 +700,9 @@ select.input-style {
     background-color: #F7F5F0; /* Soft Warm Linen */
     border-bottom: 1px solid var(--border-color);
 }
+.section-testimonials .tagline {
+    color: var(--sage-dark);
+}
 
 .testimonials-grid {
     display: grid;
@@ -716,8 +724,8 @@ select.input-style {
 }
 .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(184, 154, 117, 0.15);
-    border-color: var(--bronze);
+    box-shadow: 0 15px 40px rgba(107, 121, 79, 0.15);
+    border-color: var(--sage);
 }
 
 .google-icon-badge {
@@ -738,15 +746,15 @@ select.input-style {
 .user-avatar-initials {
     width: 42px;
     height: 42px;
-    background-color: var(--bronze-light);
-    border: 1px solid var(--border-color);
+    background-color: var(--sage-light);
+    border: 1px solid rgba(139, 149, 117, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-heading);
     font-size: 1.1rem;
-    color: var(--bronze-dark);
+    color: var(--sage-dark);
     font-weight: 500;
 }
 
